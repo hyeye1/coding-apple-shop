@@ -31,11 +31,21 @@ let cart = createSlice({
     },
   ],
   reducers: {
-    plusCount(state) {
-      return co
+    addCount(state) {
+      // let copy = [...state];
+      // console.log(copy[0].count);
+      // copy[0].count++;
+      // console.log(copy[0].count);
+      // console.log(copy[0]);
+      // let id = clicked.payload.id;
+      // let copy = state[id].count;
+      // console.log(copy);
+      // return copy;
     }
   }
 })
+
+export let { addCount } = cart.actions;
 
 export default configureStore({
   reducer: {
